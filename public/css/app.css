@@ -21,6 +21,14 @@
   line-height: 100px;
 }
 
+.jumbotron {
+  height: 500px;
+  width: 100%;
+  background-image: url(../img/jumbotron.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

@@ -5,8 +5,8 @@
 @section('title', 'Comics-Laravel')
 
 @section('main')
-    <div class="ecc">
-        <h1>Comics and Novel</h1>
+    <div class="jumbotron">
+        edo
     </div>
     <section>
         <p>
