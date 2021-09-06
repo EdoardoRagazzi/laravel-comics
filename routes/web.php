@@ -17,9 +17,13 @@ Route::get('/', function () {
     return view('home');
 })->name('homepage');
 
+// Route::get('/characters', function () {
+//     return view('characters');
+// })->name('characterspage');
+
 Route::get('/comics', function () {
 
     $comics = config('comics');
     $data =  ['comics' => $comics];
     return view('comics', $data);
-})->name('characterspage');
+})->name('comicspage');
