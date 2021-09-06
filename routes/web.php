@@ -18,6 +18,8 @@ Route::get('/', function () {
 })->name('homepage');
 
 Route::get('/comics', function () {
-    $data =  ['comics' => $comics]
+
+    $comics = config('comics');
+    $data =  ['comics' => $comics];
     return view('comics', $data);
-})->name('comicspage');
+})->name('characterspage');
