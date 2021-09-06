@@ -5,13 +5,27 @@
 @section('title', 'Comics-Laravel')
 
 @section('main')
+<section>
     <div class="jumbotron">
-        edo
+        
     </div>
-    <section>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nam hic, mollitia nihil magni iusto sapiente vel voluptatem neque officia.
-        </p>
-    </section>
+</section>
+<section>
+    <div class="container">
+        <div class="slot-container justify-content-center row">
+            @foreach ($comics as $card)
+                <div class="slot col-2 d-inline-block">
+                    <div class="img">
+                        <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
+                    </div>
+                    <div class="text">
+                        <h5>{{ $card['series']}} </h5>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+    
 
 @endsection
