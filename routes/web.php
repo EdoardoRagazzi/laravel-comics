@@ -24,15 +24,22 @@ Route::get('/', function () {
 // })->name('characterspage');
 
 Route::get('/comics', function () {
+
+   //Passing 2 Parameters nav & comics both from two oop 
     $comics = config('comics');
-    $data =  ['comics' => $comics];
-    return view('comics', $data);
+    $nav = config('nav');
+
+    // Returning two array 
+    return view('comics',[
+        'comics' => $comics,
+        'nav'=>$nav
+    ]);
 })->name('comicspage');
 
-Route::get('/header', function(){
-    $nav = config('nav');
-    $data = ['nav'=> $nav];
-    return view('header', $data);
-})->name('headerpage');
+// Route::get('/header', function(){
+//     $nav = config('nav');
+//     $data = ['nav'=> $nav];
+//     return view('header', $data);
+// })->name('headerpage');
 
 
