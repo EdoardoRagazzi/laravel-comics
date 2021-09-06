@@ -14,8 +14,15 @@
                         <li> <a class="text-uppercase" href="{{route('videospage')}}">Videos</a></li>
                         <li> <a class="text-uppercase" href="{{route('newspage')}}">News</a></li>
                         <li> <a class="text-uppercase" href="{{route('shoppage')}}">Shop</a></li> --}}
-                
-                <ul class="nav justify-content-center">
+                    <ul class="nav justify-content-center">
+                        @foreach ($nav as $link)
+                            <li class="nav-item">
+                                <a class="nav-link active text-uppercase" aria-current="page" href="{{route($link['url'])}}">{{ $link['text']}}</a>
+                            </li>
+                            
+                        
+                        @endforeach
+                {{-- <ul class="nav justify-content-center">
                     <li class="nav-item">
                     <a class="nav-link active text-uppercase" aria-current="page" >Characters</a>
                     </li>
@@ -40,7 +47,7 @@
                     <li class="nav-item">
                         <a class="nav-link active text-uppercase" aria-current="page" >Shop</a>
                     </li>
-                </ul>
+                </ul> --}}
             </div>
             <div class="search d-flex align-items-center">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
