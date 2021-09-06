@@ -10,6 +10,13 @@
   margin: auto;
 }
 
+.headerbox {
+  height: 100px;
+}
+
+.logo {
+  margin-left: 30px;
+}
 .logo img {
   height: 100px;
   padding: 10px;
@@ -18,7 +25,24 @@
 }
 
 .main-menu {
-  line-height: 100px;
+  line-height: 79px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+ul li:hover {
+  color: blue;
+  border-bottom: 5px solid blue;
+  transition: 0.5s ease;
+}
+ul li a {
+  text-decoration: none;
+  color: grey;
 }
 
 .jumbotron {
