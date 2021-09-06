@@ -15,7 +15,7 @@
     {{-----------Structure body---------------}}
     
     {{-- Including HEADER --}}
-    @include('header')
+    @include('partials.header')
 
     {{-- Including  MAIN --}}
     <main>@yield('main')</main>
