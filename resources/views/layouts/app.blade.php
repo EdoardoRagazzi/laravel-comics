@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    @yield('css')
+    <link href="{{ asset('sass/app.scss') }}" rel="stylesheet">
+   
     <title>@yield('title')</title>
 </head>
 <body>
