@@ -11,7 +11,7 @@
     </div>
 </section>
 <section>
-    <div class="container">
+    <div class="container-fluid">
         <div class="slot-container justify-content-center row">
             @foreach ($comics as $card)
                 <div class="slot col-2 d-inline-block">
