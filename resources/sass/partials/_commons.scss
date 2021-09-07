@@ -8,3 +8,13 @@
     max-width: 1170px;
     margin: auto;
 }
+
+.home{
+    background-color: rgb(96, 131, 26);
+   height:400px;
+   img{
+       height: 100%;
+       width: 100%;
+       object-fit: fill;
+   }
+}

@@ -5,13 +5,10 @@
 @section('title', 'Comics-Laravel')
 
 @section('main')
-    <div class="ecc">
-        <h1>Main home</h1>
-    </div>
     <section>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nam hic, mollitia nihil magni iusto sapiente vel voluptatem neque officia.
-        </p>
+        <div class="home">
+            <img src="{{asset('img/main.png')}}" alt="">
+        </div>
     </section>
 
 @endsection

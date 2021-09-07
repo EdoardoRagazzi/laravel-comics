@@ -10,6 +10,17 @@
   margin: auto;
 }
 
+.home {
+  background-color: #60831a;
+  height: 400px;
+}
+.home img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .headerbox {
   height: 100px;
 }
